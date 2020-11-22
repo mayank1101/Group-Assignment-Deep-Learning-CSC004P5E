@@ -1,0 +1,4 @@
+.ipynb_.*
+cnn_backward_propagation/__pycache__/.*
+cnn_forward_propagation/__pycache__/.*
+.*pycache.*
