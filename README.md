@@ -17,5 +17,5 @@
 #### Contributions
 
 * [Mayank Sharma (2019PCS0006)](https://github.com/mayank1101) 
-* [Nikita Sharma (2019PCS0005)](https://github.com/nikitasharma9010)
+* [Nikita Sharma (2019PCS0007)](https://github.com/nikitasharma9010)
 * [Pranav Joshi (2019PCS0022)](https://github.com/PranavJoshi1)
