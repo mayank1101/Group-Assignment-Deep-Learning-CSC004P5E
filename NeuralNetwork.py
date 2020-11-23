@@ -33,7 +33,7 @@ class NeuralNetwork(object):
 
     def forward_pass_train(self, X):
 
-        ### Forward pass ###
+        ### Forward pass
         
         #Hidden layer.
         hidden_inputs = X.dot(self.weights_input_to_hidden) # signals into hidden layer
@@ -58,7 +58,7 @@ class NeuralNetwork(object):
             delta_weights_h_o: change in weights from hidden to output layers
         '''
        
-        ### Backward pass ###
+        ### Backward pass
 
         # Output error
         error = (y - final_outputs) # Output layer error is the difference between desired target and actual output.
@@ -102,7 +102,7 @@ class NeuralNetwork(object):
             features: 1D array of feature values
         '''
         
-        #### Forward pass ####
+        #### Forward pass
 
         # Hidden layer
         hidden_inputs = features.dot(self.weights_input_to_hidden) # input feature vector into hidden layer
@@ -136,12 +136,3 @@ class NeuralNetwork(object):
             delta_weights_i_h, delta_weights_h_o = self.backpropagation(final_outputs, hidden_outputs, X, y, 
                                                                         delta_weights_i_h, delta_weights_h_o)
         self.update_weights(delta_weights_i_h, delta_weights_h_o, n_records)
-
-
-#########################################################
-# Tune Hyperparameters for Better Accuracy
-##########################################################
-iterations = 3000
-learning_rate = 0.8
-hidden_nodes = 15
-output_nodes = 1
